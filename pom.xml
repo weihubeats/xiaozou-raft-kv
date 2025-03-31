@@ -26,6 +26,36 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spotless-maven-plugin.version>2.43.0</spotless-maven-plugin.version>
     </properties>
+    
+    
+    <dependencyManagement>
+        <dependencies>
+            
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.36</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>32.1.2-jre</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.17.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baidu</groupId>
+                <artifactId>brpc-java</artifactId>
+                <version>3.0.5</version>
+            </dependency>
+            
+        </dependencies>
+    </dependencyManagement>
 
     
     <build>
