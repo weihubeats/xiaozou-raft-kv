@@ -1,6 +1,6 @@
 package com.xiaozou.raft.kv.core.service;
 
-import com.xiaozou.raft.core.proto.RaftProto;
+import com.xiaozou.raft.kv.core.proto.RaftProto;
 
 /**
  * @author : wh
@@ -14,6 +14,6 @@ public interface RaftClientService {
      * @param request
      * @return
      */
-    com.xiaozou.raft.core.proto.RaftProto.GetLeaderResponse getLeader(RaftProto.GetLeaderRequest request);
+    RaftProto.GetLeaderResponse getLeader(RaftProto.GetLeaderRequest request);
 
 }
